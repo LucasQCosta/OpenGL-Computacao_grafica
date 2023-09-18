@@ -648,7 +648,7 @@ void display(){
 
         }
 
-    else if(tempo<1100){
+    else if(tempo<1500){
         planet3();
         drawBackRocket2();
         glutSwapBuffers();
