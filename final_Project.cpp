@@ -591,7 +591,7 @@ void display(){
         drawCircle(-1.0f, -2.0f, 1, 100);
 
         //planeta
-        glColor3f(0.0, 0.8, 0.0);
+        glColor3f(0.4, 0.4, 1.0);
         drawCircle(-1.0f, -1.0f, 1, 100);
 
         //detalhe planeta
