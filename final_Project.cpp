@@ -618,7 +618,7 @@ void display(){
         glColor3f(1.0, 1.0, 1.0); // Cor das estrela
         stars2();
 
-        glColor3f(0.0, 0.0, 0.7); // Cor dos meteoros
+        glColor3f(0.0, 0.0, 1.0); // Cor dos meteoros
         // Preenche o interior do círculo com a cor vermelha
         drawCircle(0.0f, 1.5f, 0.1, 16);
 
