@@ -113,7 +113,7 @@ void drawRocket(){
     glTranslatef(-0.3f, dist-1.0, 0.0f);
 
     // Desenhar o corpo do foguete
-    glColor3f(0.0, 0.0, 1.0);
+    glColor3f(1.0, 0.0, 0.0);
     glBegin(GL_POLYGON);
         glVertex2f(-0.2, - 0.5);
         glVertex2f(0.2, -0.5);
@@ -130,7 +130,7 @@ void drawRocket(){
     glEnd();
 
     // Desenhar as aletas do foguete
-    glColor3f(1.0, 0.0, 0.0);
+    glColor3f(0.0, 0.0, 1.0);
     glBegin(GL_TRIANGLES);
         glVertex2f(-0.2, -0.5);
         glVertex2f(-0.5, -0.7);
@@ -260,7 +260,7 @@ void drawRocket2(){
     glScalef(0.2f, 0.2f, 1.0f);
 
     // Desenhar o corpo do foguete
-    glColor3f(0.0, 0.0, 1.0);
+    glColor3f(1.0, 0.0, 0.0);
     glBegin(GL_POLYGON);
         glVertex2f(-0.2, - 0.5);
         glVertex2f(0.2, -0.5);
@@ -277,7 +277,7 @@ void drawRocket2(){
     glEnd();
 
     // Desenhar as aletas do foguete
-    glColor3f(1.0, 0.0, 0.0);
+    glColor3f(0.0, 0.0, 1.0);
     glBegin(GL_TRIANGLES);
         glVertex2f(-0.2, -0.5);
         glVertex2f(-0.5, -0.7);
