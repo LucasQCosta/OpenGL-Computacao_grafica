@@ -216,10 +216,10 @@ void drawPlanet(float cx, float cy, float r, int num_segments) {
 
 void drawPlanetDetail(float cx, float cy, float r, int num_segments) {
     if((0.18f - distDetail) <= -0.18f){
-        glColor3f(1.0, 0.5, 0.5);
+        glColor3f(0.0, 0.0, 0.7);
     }
     else{
-        glColor3f(0.5, 1.5, 0.5);
+        glColor3f(0.0, 0.0, 0.4);
     }
     glBegin(GL_TRIANGLE_FAN); // Use GL_TRIANGLE_FAN para preencher o círculo
     glVertex2f(cx, cy); // Centro do círculo
