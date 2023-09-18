@@ -46,7 +46,7 @@ float step = 0.005;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-void ceu(){
+void terra(){
     // Desenhar o ceu
     glColor3f(0.0, 0.8, 0.0);
     glBegin(GL_QUADS);
@@ -57,7 +57,7 @@ void ceu(){
     glEnd();
 }
 
-void terra(){
+void ceu(){
     // Desenhar o chão
     glColor3f(0.4, 0.4, 1.0);
     glBegin(GL_QUADS);
@@ -563,7 +563,7 @@ void update(int value) {
 }
 
 void planet3(){
-    glColor3f(0.0, 1.0, 0.0);  // Verde
+    glColor3f(0.88, 0.34, 0.13); // Cor de marte
     glBegin(GL_POLYGON);
     for (int i = 0; i < 360; i++) {
         float angle = i * 3.14159 / 180;
@@ -586,12 +586,12 @@ void display(){
     else if (tempo< 610){
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-        glColor3f(1.0, 1.0, 1.0);
+        glColor3f(1.0, 1.0, 1.0); // Cores da estrelas
         stars();
         drawCircle(-1.0f, -2.0f, 1, 100);
 
         //planeta
-        glColor3f(0.0, 0.8, 0.0);
+        glColor3f(0.0, 0.8, 0.0); // Cor do planeta terra
         drawCircle(-1.0f, -1.0f, 1, 100);
 
         //detalhe planeta
@@ -601,11 +601,11 @@ void display(){
         drawCircle(-0.9f, -0.9f, -0.4, 8);
         glPopMatrix();
 
-        glColor3f(1.0, 1.0, 1.0); // Define a cor vermelha
+        glColor3f(0.0, 0.0, 0.7); // Cor da agua
         // Preenche o interior do círculo com a cor vermelha
         drawCircle(0.75f, 0.75f, 0.1, 16);
 
-        glColor3f(1.0, 1.0, 1.0); // Define a cor vermelha
+        glColor3f(0.88, 0.34, 0.13); // Cor do planeta marte
         // Preenche o interior do círculo com a cor vermelha
         drawCircle(0.75f, 0.75f, 0.1, 16);
         drawRocket();
@@ -615,15 +615,15 @@ void display(){
     }
     else if(tempo<900){
 
-        glColor3f(1.0, 1.0, 1.0);
+        glColor3f(1.0, 1.0, 1.0); // Cor das estrela
         stars2();
 
-        glColor3f(0.5, 0.5, 0.5); // Define a cor vermelha
+        glColor3f(0.0, 0.0, 1.0); // Cor dos meteoros
         // Preenche o interior do círculo com a cor vermelha
         drawCircle(0.0f, 1.5f, 0.1, 16);
 
 
-        glColor3f(1.0, 0.5, 0.5); // Define a cor vermelha
+        glColor3f(0.0, 0.8, 0.0); // Cor do planeta terra
         // Preenche o interior do círculo com a cor vermelha
         drawPlanet(0.0f, 0.0f, 0.2, 100);
 
