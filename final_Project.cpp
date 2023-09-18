@@ -187,16 +187,12 @@ void drawBackRocket2(){
     glVertex2f(-0.4, 1.0);
     glEnd();
 
-    glColor3f(0.2, 0.0, 0.0); // Branco
+    glColor3f(0.2, 0.0, 0.0); // Avermelhado
     glBegin(GL_LINES);
         glVertex2f(-0.4, 0.4);  // Ponto inicial
         glVertex2f(-0.2, 0.2);   // Ponto final
     glEnd();
 
-    glColor3f(0.5, 0.5, 0.0); // Branco
-    glBegin(GL_LINES);
-        glVertex2f(-0.4, 0.4);  // Ponto inicial
-        glVertex2f(-0.5, 0.5);   // Ponto final
     glEnd();
 
 }
