@@ -187,16 +187,12 @@ void drawBackRocket2(){
     glVertex2f(-0.4, 1.0);
     glEnd();
 
-    glColor3f(0.2, 0.0, 0.0); // Branco
+    glColor3f(0.2, 0.0, 0.0); // Avermelhado
     glBegin(GL_LINES);
         glVertex2f(-0.4, 0.4);  // Ponto inicial
         glVertex2f(-0.2, 0.2);   // Ponto final
     glEnd();
 
-    glColor3f(0.5, 0.5, 0.0); // Branco
-    glBegin(GL_LINES);
-        glVertex2f(-0.4, 0.4);  // Ponto inicial
-        glVertex2f(-0.5, 0.5);   // Ponto final
     glEnd();
 
 }
@@ -216,10 +212,10 @@ void drawPlanet(float cx, float cy, float r, int num_segments) {
 
 void drawPlanetDetail(float cx, float cy, float r, int num_segments) {
     if((0.18f - distDetail) <= -0.18f){
-        glColor3f(1.0, 0.5, 0.5);
+        glColor3f(0.0, 0.0, 0.7);
     }
     else{
-        glColor3f(0.5, 1.5, 0.5);
+        glColor3f(0.0, 0.0, 0.4);
     }
     glBegin(GL_TRIANGLE_FAN); // Use GL_TRIANGLE_FAN para preencher o círculo
     glVertex2f(cx, cy); // Centro do círculo
@@ -652,7 +648,7 @@ void display(){
 
         }
 
-    else if(tempo<1100){
+    else if(tempo<1500){
         planet3();
         drawBackRocket2();
         glutSwapBuffers();
